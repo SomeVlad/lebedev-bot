@@ -1,0 +1,15 @@
+{
+    "name": "lebedevbot",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "haha no"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-fetch": "2.6.0"
+    }
+}
