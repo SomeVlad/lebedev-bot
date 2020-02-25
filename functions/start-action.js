@@ -1,1 +1,1 @@
-export async const startAction = ctx => ctx.reply('Hi there!')
+export const startAction = async ctx => ctx.reply('Hi there!')
