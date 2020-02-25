@@ -1,6 +1,7 @@
-import { startAction } from './start-action.js'
-import * as Telegraf from 'telegraf'
+const TelegramBot = require('node-telegram-bot-api')
 
-const bot = new Telegraf(process.env.TELEGRAM_TOKEN)
+const bot = new TelegramBot(process.env.TELEGRAM_TOKEN)
 
-bot.start(startAction)
+bot.onText(/\/start/, (msg) => {
+    bot.sendMessage(msg.chat.id, 'hey there')
+})
