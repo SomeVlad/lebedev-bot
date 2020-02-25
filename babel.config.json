@@ -1,0 +1,15 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "node": "current"
+                },
+                "corejs": 3,
+                "useBuiltIns": "usage"
+            }
+        ]
+    ],
+    "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}
