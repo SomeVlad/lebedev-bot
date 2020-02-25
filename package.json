@@ -1,15 +1,26 @@
 {
     "name": "lebedevbot",
-    "version": "1.0.0",
-    "type": "module",
-    "description": "",
-    "main": "index.js",
+    "version": "0.1.0",
+    "description": "new awesome bot",
+    "main": "src/index.js",
     "scripts": {
-        "test": "haha no"
+        "test": "jest",
+        "test-watch": "jest --watch",
+        "build": "babel src -d build"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "Vlad Samoylov",
+    "license": "WTFPL",
     "dependencies": {
+        "@babel/polyfill": "7.8.3",
+        "core-js": "3.6.4",
+        "lodash": "4.17.15",
         "node-fetch": "2.6.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.8.4",
+        "@babel/core": "7.8.4",
+        "@babel/plugin-syntax-dynamic-import": "7.8.3",
+        "@babel/preset-env": "7.8.4",
+        "jest": "25.1.0"
     }
 }
