@@ -1,7 +1,6 @@
 {
     "name": "lebedevbot",
     "version": "0.1.0",
-    "type": "module",
     "description": "new awesome bot",
     "main": "functions/bot.js",
     "scripts": {
