@@ -6,9 +6,9 @@ const toJson = response => response.json()
 const { TELEGRAM_TOKEN, NEWS_TOKEN } = process.env
 const minute = 1000 * 60
 const day = minute * 60 * 24
+const bot = new TelegramBot(TELEGRAM_TOKEN)
 
 exports.handler = async({ body }) => {
-    const bot = new TelegramBot(TELEGRAM_TOKEN)
 
     bot.onText(/\/start/, (msg) => {
         bot.sendMessage(msg.chat.id, 'hey there')
