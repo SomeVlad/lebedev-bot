@@ -7,7 +7,7 @@
         "postinstall": "netlify-lambda install",
         "test": "jest",
         "test-watch": "jest --watch",
-        "lambda": "netlify-lambda serve functions",
+        "lambda": "netlify-lambda build functions",
         "build": "babel functions -d build && netlify-lambda build functions"
     },
     "author": "Vlad Samoylov",

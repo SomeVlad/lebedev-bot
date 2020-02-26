@@ -1,5 +1,4 @@
-import fetch from 'node-fetch'
-
+const fetch = require('node-fetch').default
 const toJson = response => response.json()
 
 const url = encodeURI(
