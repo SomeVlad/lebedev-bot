@@ -6,7 +6,7 @@ const toJson = response => response.json()
 const { TELEGRAM_TOKEN, NEWS_TOKEN } = process.env
 const minute = 1000 * 60
 const day = minute * 60 * 24
-const bot = new TelegramBot(TELEGRAM_TOKEN)
+const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true })
 
 console.log('function body')
 
